@@ -41,7 +41,7 @@ pub fn resolve_family_id(socket: &Socket, name: &CStr) -> Result<Option<u16>, Fa
             return Ok(Some(deserialize_u16(value)?));
         }
     }
-    return Ok(None);
+    Ok(None)
 }
 
 #[derive(Debug, Error)]

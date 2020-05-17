@@ -78,7 +78,7 @@ impl Drop for TaskstatsListener {
 fn do_register(conn: &mut TaskstatsConnection, cpu_mask: &CStr) -> Result<(), Error> {
     conn.send(NetlinkAttr {
         ty: TASKSTATS_CMD_ATTR_REGISTER_CPUMASK,
-        payload: cpu_mask.as_ref(),
+        payload: cpu_mask,
     })
 }
 
