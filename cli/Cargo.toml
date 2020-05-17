@@ -1,0 +1,14 @@
+[package]
+name = "taskstats-cli"
+version = "0.1.0"
+authors = ["Xidorn Quan <me@upsuper.org>"]
+edition = "2018"
+
+[dependencies]
+anyhow = "1.0.30"
+log = "0.4.8"
+num_cpus = "1.13.0"
+signal-hook = "0.1.15"
+stderrlog = "0.4.3"
+structopt = "0.3.14"
+taskstats = { path = ".." }

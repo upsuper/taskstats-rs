@@ -1,0 +1,21 @@
+[package]
+name = "taskstats"
+version = "0.1.0"
+description = "high-level encapsulation of Linux's per-task statistics interface"
+authors = ["Xidorn Quan <me@upsuper.org>"]
+edition = "2018"
+keywords = ["linux", "netlink", "taskstats"]
+categories = ["api-bindings", "os"]
+license = "MIT"
+
+[dependencies]
+byteorder = "1.3.4"
+libc = "0.2.69"
+log = "0.4.8"
+netlink-sys = "0.2.0"
+once_cell = "1.3.1"
+thiserror = "1.0.14"
+zerocopy = "0.3.0"
+
+[workspace]
+members = ["cli"]
