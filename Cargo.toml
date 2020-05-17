@@ -1,12 +1,13 @@
 [package]
 name = "taskstats"
-version = "0.1.0"
+version = "0.1.1"
 description = "high-level encapsulation of Linux's per-task statistics interface"
 authors = ["Xidorn Quan <me@upsuper.org>"]
 edition = "2018"
 keywords = ["linux", "netlink", "taskstats"]
 categories = ["api-bindings", "os"]
 license = "MIT"
+readme = "README.md"
 
 [dependencies]
 byteorder = "1.3.4"
